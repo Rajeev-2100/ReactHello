@@ -1,12 +1,108 @@
-# React + Vite
+# React Router Demo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application demonstrating client-side routing using React Router. The app contains two pages:
 
-Currently, two official plugins are available:
+* **Home Page** (`/`)
+* **About Page** (`/about`)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* React 19
+* React Router DOM
+* Client-side navigation
+* Separate page components
+* Clean project structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```bash
+src/
+│
+├── pages/
+│   └── About.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd project-name
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+## Running the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```bash
+http://localhost:5173
+```
+
+## Routes
+
+| Route    | Description   |
+| -------- | ------------- |
+| `/`      | Home page     |
+| `/about` | About Us page |
+
+## Technologies Used
+
+* React
+* React DOM
+* React Router DOM
+* Vite
+
+## About Page
+
+The About page displays information about the organization using placeholder text and demonstrates how React Router renders different components based on the current URL.
+
+## Router Configuration
+
+```jsx
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: "/about",
+    element: <About />
+  }
+]);
+```
+
+## Learning Objectives
+
+This project helps developers understand:
+
+* React component structure
+* React Router setup
+* Route configuration
+* Navigation between pages
+* Single Page Application (SPA) concepts
+
+## Author
+
+Created as a React Router learning project.
